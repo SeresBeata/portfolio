@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: rgb(39, 39, 39);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,3 +18,12 @@ html {
   height: calc(100vh - 60px);
   scroll-snap-align: center;
 }
+
+/* Custom Scrollbar Start */
+@supports (scrollbar-color: gray rgb(54, 54, 54)) {
+  * {
+    scrollbar-color: gray rgb(54, 54, 54);
+    scrollbar-width: thin;
+  }
+}
+/* End: Custom Scrollbar */
