@@ -16,6 +16,10 @@ const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={'background.default'} color={'text.primary'}>
         <Navbar />
+        <Box id="home"> Home</Box>
+        <Box id="about"> About</Box>
+        <Box id="portfolio"> Portfolio</Box>
+        <Box id="contact"> Contact</Box>
       </Box>
     </ThemeProvider>
   );
