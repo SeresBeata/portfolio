@@ -16,10 +16,19 @@ const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={'background.default'} color={'text.primary'}>
         <Navbar />
-        <Box id="home"> Home</Box>
-        <Box id="about"> About</Box>
-        <Box id="portfolio"> Portfolio</Box>
-        <Box id="contact"> Contact</Box>
+        <Box id="home" className="main-sections">
+          Home
+        </Box>
+        <Box className="main-sections">Parallax</Box>
+        <Box id="about" className="main-sections">
+          About
+        </Box>
+        <Box id="portfolio" className="main-sections">
+          Portfolio
+        </Box>
+        <Box id="contact" className="main-sections">
+          Contact
+        </Box>
       </Box>
     </ThemeProvider>
   );

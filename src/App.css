@@ -1,0 +1,16 @@
+html {
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* subtract the height of navbar */
+.main-sections {
+  height: calc(100vh - 60px);
+  scroll-snap-align: center;
+}
