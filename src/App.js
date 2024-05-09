@@ -4,6 +4,7 @@ import './App.css';
 import { Box, ThemeProvider, createTheme } from '@mui/material';
 //child component
 import Navbar from './components/Navbar';
+import Parallax from './components/Parallax';
 
 const App = () => {
   const darkTheme = createTheme({
@@ -17,14 +18,16 @@ const App = () => {
       <Box bgcolor={'background.default'} color={'text.primary'}>
         <Navbar />
         <Box id="home" className="main-sections">
-          Home
+          <Parallax type="homeparallax" />
         </Box>
-        <Box className="main-sections">Parallax</Box>
         <Box id="about" className="main-sections">
           About
         </Box>
         <Box id="portfolio" className="main-sections">
           Portfolio
+        </Box>
+        <Box className="main-sections">
+          <Parallax type="simpleparallax" />
         </Box>
         <Box id="contact" className="main-sections">
           Contact
