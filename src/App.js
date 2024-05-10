@@ -4,7 +4,7 @@ import './App.css';
 import { Box, ThemeProvider, createTheme } from '@mui/material';
 //child component
 import Navbar from './components/Navbar';
-import Parallax from './components/Parallax';
+import Parallax from './components/Parallax/Parallax';
 import About from './components/About/About';
 
 const App = () => {

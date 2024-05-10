@@ -5,7 +5,7 @@ h1 {
 }
 
 .parallax-bg-1 {
-  background-image: url('../../public/img/image-full.png');
+  background-image: url('../../../public/img/image-full.png');
   height: calc(100vh - 60px);
   background-position: bottom;
   background-size: cover;
@@ -18,7 +18,7 @@ h1 {
 }
 
 .parallax-bg-2 {
-  background-image: url('../../public/img/pexels-photo-844297.jpeg');
+  background-image: url('../../../public/img/pexels-photo-844297.jpeg');
   height: calc(100vh - 60px);
   background-position: bottom;
   background-size: cover;
@@ -32,7 +32,7 @@ h1 {
 }
 
 .parallax-mountain-1 {
-  background-image: url('../../public/img/image-bottom.png');
+  background-image: url('../../../public/img/image-bottom.png');
   height: calc(100vh - 60px);
   background-position: bottom;
   background-size: cover;
@@ -42,7 +42,7 @@ h1 {
 }
 
 .parallax-mountain-2 {
-  background-image: url('../../public/img/image-bottom.png');
+  background-image: url('../../../public/img/image-bottom.png');
   height: calc(100vh - 60px);
   background-position: bottom;
   background-size: cover;
@@ -53,7 +53,7 @@ h1 {
 }
 
 .parallax-stars {
-  background-image: url('../../public/img/stars.png');
+  background-image: url('../../../public/img/stars.png');
   background-size: cover;
   background-position: bottom;
   height: calc(100vh - 60px);
