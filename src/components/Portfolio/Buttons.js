@@ -1,8 +1,16 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import CardHeader from '@mui/material/CardHeader';
 
 const images = [
   {
@@ -137,7 +145,35 @@ const ImageMarked = styled('span')(({ theme }) => ({
   transition: theme.transitions.create('opacity'),
 }));
 
+const modalStyle = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  height: '100%',
+  bgcolor: 'transparent',
+  color: 'text.primary',
+  border: 'none',
+  p: 4,
+  display: 'flex',
+  alignItems: 'center',
+};
+
 export default function Buttons() {
+  //handle modal open/close
+  const [openModal, setOpenModal] = useState(false);
+
+  //handle modal data
+  const [projectDetails, setProjectDetails] = useState({
+    modalTitle: '',
+    modalImg: '',
+    modalUrl: '',
+    modalDescription: '',
+    modalDemo: '',
+    modalCode: '',
+  });
+
   return (
     <Box
       sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}
@@ -149,6 +185,17 @@ export default function Buttons() {
           style={{
             width: image.width,
             border: '2px solid white',
+          }}
+          onClick={() => {
+            setProjectDetails((prevState) => ({
+              ...prevState,
+              modalTitle: image.title,
+              modalImg: image.imgUrl,
+              modalDescription: image.description,
+              modalCode: image.githubLink,
+              modalDemo: image.demoLink,
+            }));
+            setOpenModal(true);
           }}
         >
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
@@ -173,6 +220,69 @@ export default function Buttons() {
           </Image>
         </ImageButton>
       ))}
+      <Modal
+        open={openModal}
+        onClose={() => {
+          setOpenModal(false);
+        }}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={modalStyle}>
+          <Card sx={{ padding: '10px' }}>
+            <CardHeader
+              title={projectDetails.modalTitle}
+              subheader="Beáta Molnár"
+            />
+            <CardMedia
+              component="img"
+              alt={projectDetails.modalTitle}
+              sx={{ height: { md: '350px', xs: '180px' } }}
+              image={projectDetails.modalImg}
+            />
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                {projectDetails.modalDescription}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <a
+                href={projectDetails.modalCode}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button size="small" color="secondary">
+                  See project
+                </Button>
+              </a>
+
+              {projectDetails.modalDemo === '' ? (
+                ''
+              ) : (
+                <a
+                  href={projectDetails.modalDemo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button size="small" color="secondary">
+                    Try it out
+                  </Button>
+                </a>
+              )}
+
+              <Button
+                size="small"
+                color="error"
+                onClick={() => {
+                  setOpenModal(false);
+                }}
+              >
+                Close
+              </Button>
+            </CardActions>
+          </Card>
+        </Box>
+      </Modal>
     </Box>
   );
 }
