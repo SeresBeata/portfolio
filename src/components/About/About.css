@@ -15,7 +15,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #111132, #0c0c1d);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
   padding: 100px;
 }
 
