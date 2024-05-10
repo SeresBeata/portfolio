@@ -11,7 +11,7 @@ h2 {
 }
 
 .about-container {
-  height: calc(100vh - 60px);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

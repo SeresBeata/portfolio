@@ -13,9 +13,8 @@ body {
   box-sizing: border-box;
 }
 
-/* subtract the height of navbar */
 .main-sections {
-  height: calc(100vh - 60px);
+  height: 100vh;
   scroll-snap-align: center;
 }
 
