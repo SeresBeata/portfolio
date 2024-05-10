@@ -6,6 +6,7 @@ import { Box, ThemeProvider, createTheme } from '@mui/material';
 import Navbar from './components/Navbar';
 import Parallax from './components/Parallax/Parallax';
 import About from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
 
 const App = () => {
   const darkTheme = createTheme({
@@ -25,7 +26,7 @@ const App = () => {
           <About />
         </Box>
         <Box id="portfolio" className="main-sections">
-          Portfolio
+          <Portfolio />
         </Box>
         <Box className="main-sections">
           <Parallax type="simpleparallax" />
