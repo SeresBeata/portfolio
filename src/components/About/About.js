@@ -17,17 +17,18 @@ const About = () => {
       <Box>
         <h2>About</h2>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          As a former physiotherapist, my main goal was to find a creative, but
-          at the same time not physically demanding profession that I can
-          practice with great passion in the long term.
+          My name is Beáta Molnár and I am a web developer. As a former
+          physiotherapist, my main goal was to find a creative, but at the same
+          time not physically demanding profession that I can practice with
+          great passion in the long term.
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           I have found this profession in the form of web development.
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          I am sure that my experience as a physiotherapist will prove to be
-          useful in this field as well, such as good communication skills,
-          flexibility, problem-solving thinking, creativity and so on.
+          My experience as a physiotherapist proves to be useful in this field
+          as well, such as good communication skills, flexibility,
+          problem-solving thinking, creativity and so on.
         </Typography>
         <div className="btn-container">
           <a
