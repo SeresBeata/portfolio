@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Parallax from './components/Parallax/Parallax';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   const darkTheme = createTheme({
@@ -32,7 +33,7 @@ const App = () => {
           <Parallax type="simpleparallax" />
         </Box>
         <Box id="contact" className="main-sections">
-          Contact
+          <Contact />
         </Box>
       </Box>
     </ThemeProvider>
