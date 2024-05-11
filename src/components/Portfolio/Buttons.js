@@ -158,6 +158,7 @@ const modalStyle = {
   p: 4,
   display: 'flex',
   alignItems: 'center',
+  justifyContent: 'center',
 };
 
 export default function Buttons() {
@@ -229,7 +230,7 @@ export default function Buttons() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={modalStyle}>
-          <Card sx={{ padding: '10px' }}>
+          <Card sx={{ padding: '10px', maxWidth: '800px' }}>
             <CardHeader
               title={projectDetails.modalTitle}
               subheader="Beáta Molnár"
