@@ -32,7 +32,7 @@ const About = () => {
         </Typography>
         <div className="btn-container">
           <a
-            href="https://raw.githubusercontent.com/SeresBeata/portfolio/master/public/img/cv.png"
+            href="https://drive.google.com/file/d/1rho6hWbEen06itH1-KS9sw2lTOz-W4yD/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
