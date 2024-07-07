@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { useState } from 'react';
 //MUI
 import {
   AppBar,
@@ -9,7 +9,11 @@ import {
   Button,
   Menu,
   MenuItem,
+  ButtonGroup,
 } from '@mui/material';
+//lang
+import en from '../assets/en.json';
+import de from '../assets/de.json';
 
 const Navbar = ({ lang, setLang }) => {
   //handle menu
@@ -21,6 +25,8 @@ const Navbar = ({ lang, setLang }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const [activeLang, setActiveLang] = useState('en');
 
   return (
     <AppBar position="sticky">
@@ -64,6 +70,32 @@ const Navbar = ({ lang, setLang }) => {
               </a>
               <a href="#contact">
                 <Button color="secondary">Contact</Button>
+              </a>
+              <a>
+                <ButtonGroup
+                  variant="outlined"
+                  color="secondary"
+                  aria-label="Basic button group"
+                >
+                  <Button
+                    onClick={() => {
+                      setLang(en);
+                      setActiveLang('en');
+                    }}
+                    variant={activeLang === 'en' ? 'contained' : 'outlined'}
+                  >
+                    EN
+                  </Button>
+                  <Button
+                    onClick={() => {
+                      setLang(de);
+                      setActiveLang('de');
+                    }}
+                    variant={activeLang === 'de' ? 'contained' : 'outlined'}
+                  >
+                    DE
+                  </Button>
+                </ButtonGroup>
               </a>
             </Box>
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -116,6 +148,33 @@ const Navbar = ({ lang, setLang }) => {
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <MenuItem onClick={handleClose}>Contact</MenuItem>
+                </a>
+                <a style={{ display: 'flex', justifyContent: 'center' }}>
+                  <ButtonGroup
+                    variant="outlined"
+                    color="secondary"
+                    aria-label="Basic button group"
+                    size="small"
+                  >
+                    <Button
+                      onClick={() => {
+                        setLang(en);
+                        setActiveLang('en');
+                      }}
+                      variant={activeLang === 'en' ? 'contained' : 'outlined'}
+                    >
+                      EN
+                    </Button>
+                    <Button
+                      onClick={() => {
+                        setLang(de);
+                        setActiveLang('de');
+                      }}
+                      variant={activeLang === 'de' ? 'contained' : 'outlined'}
+                    >
+                      DE
+                    </Button>
+                  </ButtonGroup>
                 </a>
               </Menu>
             </Box>
