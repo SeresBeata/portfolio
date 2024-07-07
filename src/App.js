@@ -8,6 +8,12 @@ import Parallax from './components/Parallax/Parallax';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
+//react
+import React from 'react';
+import { useState } from 'react';
+//lang
+import en from './assets/en.json';
+import de from './assets/de.json';
 
 const App = () => {
   const darkTheme = createTheme({
@@ -16,10 +22,12 @@ const App = () => {
     },
   });
 
+  const [lang, setLang] = useState(en);
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={'background.default'} color={'text.primary'}>
-        <Navbar />
+        <Navbar lang={lang} setLang={setLang} />
         <Box id="home" className="main-sections">
           <Parallax type="homeparallax" />
         </Box>

@@ -11,7 +11,7 @@ import {
   MenuItem,
 } from '@mui/material';
 
-const Navbar = () => {
+const Navbar = ({ lang, setLang }) => {
   //handle menu
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
