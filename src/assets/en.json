@@ -1,0 +1,21 @@
+{
+  "home_title": "Home",
+  "about_title": "About",
+  "portfolio_title": "Portfolio",
+  "contact_title": "Contact",
+  "about_section_first": "My name is Beáta Molnár and I am a web developer. As a former physiotherapist, my main goal was to find a creative, but at the same time not physically demanding profession that I can practice with great passion in the long term.",
+  "about_section_second": "I have found this profession in the form of web development.",
+  "about_section_third": "My experience as a physiotherapist proves to be useful in this field as well, such as good communication skills, flexibility, problem-solving thinking, creativity and so on.",
+  "portfolio_section_button_first": "See Project",
+  "portfolio_section_button_second": "Try It Out",
+  "portfolio_section_button_third": "Close",
+  "portfolio_pokedex": "The aim of this project was to create a small, responsive Pokédex web application, that loads data from an external public Pokémon API and enables the viewing of data points of Pokémon in detail. The project itself was built with HTML, CSS and JavaScript.",
+  "portfolio_myFlix_api": "The aim of this project was to build the server-side component of a “myFlix” web application. The web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.",
+  "portfolio_myFlix_react": "The aim of this project was to build the client-side component of a “myFlix” web application by using React. The web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.",
+  "portfolio_meet_app": "The aim of this project was to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.",
+  "portfolio_chat_app": "The aim of this project was to build a chat app for mobile devices using React Native (JavaScript framework used for mobile app development). The app provides users with a chat interface and options to share images and their location.",
+  "portfolio_myFlix_angular": "The aim of this project was to build the client-side component of a “myFlix” web application by using Angular. The web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.",
+  "contact_section_first": "Got your attention? Have any questions?",
+  "contact_section_second": "Let's get this conversation started! Contact me and I'll get in touch as soon as I can:",
+  "contact_find_me": "Find me on"
+}

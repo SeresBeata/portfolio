@@ -1,0 +1,21 @@
+{
+  "home_title": "Start",
+  "about_title": "Über mich",
+  "portfolio_title": "Portfolio",
+  "contact_title": "Kontakt",
+  "about_section_first": "Mein Name ist Beáta Molnár und ich bin Webentwicklerin. Als ehemalige Physiotherapeutin war es mein Hauptziel, einen kreativen, aber gleichzeitig körperlich nicht anstrengenden Beruf zu finden, den ich langfristig mit großer Leidenschaft üben kann.",
+  "about_section_second": "Ich habe diesen Beruf in Form der Webentwicklung gefunden.",
+  "about_section_third": "Meine Erfahrung als Physiotherapeutin erweist sich auch in diesem Bereich als nützlich, z. B. gute Kommunikationsfähigkeiten, Flexibilität, problemlösendes Denken, Kreativität usw.",
+  "portfolio_section_button_first": "Zum Projekt",
+  "portfolio_section_button_second": "Ausprobieren",
+  "portfolio_section_button_third": "Schließen",
+  "portfolio_pokedex": "Das Ziel dieses Projekts war es, eine kleine, responsive Pokédex Web Application zu erstellen, die Daten von einer externen, öffentlichen Pokémon-API lädt und die Anzeige von Datenpunkten von Pokémon im Detail ermöglicht. Das Projekt selbst wurde mit HTML, CSS und JavaScript erstellt.",
+  "portfolio_myFlix_api": "Das Ziel dieses Projekts war es, die serverseitige Komponente einer “myFlix” Web Application zu erstellen. Die Webanwendung bietet den Benutzern Zugang zu Informationen über verschiedene Filme, Filmregisseure und Genres. Die Benutzer können sich anmelden, ihre persönlichen Daten aktualisieren und eine Liste ihrer Lieblingsfilme erstellen.",
+  "portfolio_myFlix_react": "Das Ziel dieses Projekts war es, die clientseitige Komponente einer “myFlix” Web Application mit der Verwendung von React zu erstellen. Die Webanwendung bietet den Benutzern Zugang zu Informationen über verschiedene Filme, Filmregisseure und Genres. Die Benutzer können sich anmelden, ihre persönlichen Daten aktualisieren und eine Liste ihrer Lieblingsfilme erstellen.",
+  "portfolio_meet_app": "Das Ziel dieses Projekts war es, eine serverlose, progressive Web Application (PWA) mit React unter Verwendung einer Test-Driven Entwicklung (TDD) zu erstellen. Die Application verwendet die Google Calendar API, um anstehende Events abzurufen.",
+  "portfolio_chat_app": "Das Ziel dieses Projekts war es, eine Chat-App für mobile Geräte mit React Native (JavaScript-Framework für die Entwicklung mobiler Apps) zu entwickeln. Die App bietet den Nutzern ein Chat-Interface und Optionen zum Teilen von Bildern und ihres Standorts.",
+  "portfolio_myFlix_angular": "Das Ziel dieses Projekts war es, die clientseitige Komponente einer “myFlix” Web Application mit der Verwendung von Angular zu erstellen. Die Webanwendung bietet den Benutzern Zugang zu Informationen über verschiedene Filme, Filmregisseure und Genres. Die Benutzer können sich anmelden, ihre persönlichen Daten aktualisieren und eine Liste ihrer Lieblingsfilme erstellen.",
+  "contact_section_first": "Habe ich Ihr Interesse geweckt? Haben Sie Fragen?",
+  "contact_section_second": "Wir können ein Gespräch beginnen! Kontaktieren Sie mich und ich melde mich so schnell wie möglich.:",
+  "contact_find_me": "Finden Sie mich auf"
+}
