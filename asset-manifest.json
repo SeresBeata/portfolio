@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a0174978.css",
-    "main.js": "/portfolio/static/js/main.ae27f49a.js",
+    "main.css": "/portfolio/static/css/main.ad948b2c.css",
+    "main.js": "/portfolio/static/js/main.96513da7.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/myFlix-Angular.png": "/portfolio/static/media/myFlix-Angular.78facfb9c30722b731d4.png",
     "static/media/image-full.png": "/portfolio/static/media/image-full.e7030c80ee81e4757cdb.png",
+    "static/media/myFlix-React.png": "/portfolio/static/media/myFlix-React.5b8f49020ba0ebb11e13.png",
     "static/media/image-bottom.png": "/portfolio/static/media/image-bottom.294dcd6cf0cf6c3128f2.png",
+    "static/media/Pokedex.png": "/portfolio/static/media/Pokedex.606fa71c74c1df5f66d8.png",
+    "static/media/chat-app.png": "/portfolio/static/media/chat-app.f5c38d2b373a7dc0edbe.png",
+    "static/media/meet-app.png": "/portfolio/static/media/meet-app.c6b0e766b57421a09e01.png",
     "static/media/pexels-photo-844297.jpeg": "/portfolio/static/media/pexels-photo-844297.cd803d17b4e59b547ffb.jpeg",
+    "static/media/myFlix-Api.png": "/portfolio/static/media/myFlix-Api.4ecabae3ebd99542d16e.png",
     "static/media/stars.png": "/portfolio/static/media/stars.a979f6ed7ad00c7ea0b2.png",
     "index.html": "/portfolio/index.html",
-    "main.a0174978.css.map": "/portfolio/static/css/main.a0174978.css.map",
-    "main.ae27f49a.js.map": "/portfolio/static/js/main.ae27f49a.js.map",
+    "main.ad948b2c.css.map": "/portfolio/static/css/main.ad948b2c.css.map",
+    "main.96513da7.js.map": "/portfolio/static/js/main.96513da7.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0174978.css",
-    "static/js/main.ae27f49a.js"
+    "static/css/main.ad948b2c.css",
+    "static/js/main.96513da7.js"
   ]
 }
