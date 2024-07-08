@@ -7,3 +7,57 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+
+.card-img-pokedex {
+  background-image: url('../../../public/img/Pokedex.png');
+  background-size: cover;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  border-radius: 5px;
+  border: solid 2px rgb(67, 61, 66);
+}
+
+.card-img-api {
+  background-image: url('../../../public/img/myFlix-Api.png');
+  background-size: cover;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  border-radius: 5px;
+  border: solid 2px rgb(67, 61, 66);
+}
+
+.card-img-react {
+  background-image: url('../../../public/img/myFlix-React.png');
+  background-size: cover;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  border-radius: 5px;
+  border: solid 2px rgb(67, 61, 66);
+}
+
+.card-img-meet-app {
+  background-image: url('../../../public/img/meet-app.png');
+  background-size: cover;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  border-radius: 5px;
+  border: solid 2px rgb(67, 61, 66);
+}
+
+.card-img-chat-app {
+  background-image: url('../../../public/img/chat-app.png');
+  background-size: cover;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  border-radius: 5px;
+  border: solid 2px rgb(67, 61, 66);
+}
+
+.card-img-angular {
+  background-image: url('../../../public/img/myFlix-Angular.png');
+  background-size: cover;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  border-radius: 5px;
+  border: solid 2px rgb(67, 61, 66);
+}
