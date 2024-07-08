@@ -10,25 +10,20 @@ import {
 import PortraitIcon from '@mui/icons-material/Portrait';
 import './About.css';
 
-const About = () => {
+const About = ({ lang }) => {
   return (
     <div className="about-container">
       <img src="https://github.com/SeresBeata/achievement-1/blob/main/img/k%C3%A9p_%C3%B6n.png?raw=true" />
       <Box>
-        <h2>About</h2>
+        <h2>{lang.about_title}</h2>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          My name is Beáta Molnár and I am a web developer. As a former
-          physiotherapist, my main goal was to find a creative, but at the same
-          time not physically demanding profession that I can practice with
-          great passion in the long term.
+          {lang.about_section_first}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          I have found this profession in the form of web development.
+          {lang.about_section_second}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          My experience as a physiotherapist proves to be useful in this field
-          as well, such as good communication skills, flexibility,
-          problem-solving thinking, creativity and so on.
+          {lang.about_section_third}
         </Typography>
         <div className="btn-container">
           <a
