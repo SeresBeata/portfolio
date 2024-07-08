@@ -1,7 +1,7 @@
 import Buttons from './Buttons';
 import './Portfolio.css';
 
-const Portfolio = () => {
+const Portfolio = ({ lang }) => {
   return (
     <div className="portfolio-container">
       <Buttons />

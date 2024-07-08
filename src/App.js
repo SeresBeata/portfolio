@@ -35,7 +35,7 @@ const App = () => {
           <About lang={lang} />
         </Box>
         <Box id="portfolio" className="main-sections">
-          <Portfolio />
+          <Portfolio lang={lang} />
         </Box>
         <Box className="main-sections">
           <Parallax type="simpleparallax" />
