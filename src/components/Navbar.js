@@ -60,16 +60,16 @@ const Navbar = ({ lang, setLang }) => {
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <a href="#home">
-                <Button color="secondary">Home</Button>
+                <Button color="secondary">{lang.home_title}</Button>
               </a>
               <a href="#about">
-                <Button color="secondary">About</Button>
+                <Button color="secondary">{lang.about_title}</Button>
               </a>
               <a href="#portfolio">
-                <Button color="secondary">Portfolio</Button>
+                <Button color="secondary">{lang.portfolio_title}</Button>
               </a>
               <a href="#contact">
-                <Button color="secondary">Contact</Button>
+                <Button color="secondary">{lang.contact_title}</Button>
               </a>
               <a>
                 <ButtonGroup
@@ -107,7 +107,7 @@ const Navbar = ({ lang, setLang }) => {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
               >
-                MENU
+                {lang.menu_title}
               </Button>
               <Menu
                 id="demo-positioned-menu"
@@ -129,25 +129,29 @@ const Navbar = ({ lang, setLang }) => {
                   href="#home"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <MenuItem onClick={handleClose}>Home</MenuItem>
+                  <MenuItem onClick={handleClose}>{lang.home_title}</MenuItem>
                 </a>
                 <a
                   href="#about"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <MenuItem onClick={handleClose}>About</MenuItem>
+                  <MenuItem onClick={handleClose}>{lang.about_title}</MenuItem>
                 </a>
                 <a
                   href="#portfolio"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <MenuItem onClick={handleClose}>Portfolio</MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    {lang.portfolio_title}
+                  </MenuItem>
                 </a>
                 <a
                   href="#contact"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <MenuItem onClick={handleClose}>Contact</MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    {lang.contact_title}
+                  </MenuItem>
                 </a>
                 <a style={{ display: 'flex', justifyContent: 'center' }}>
                   <ButtonGroup
