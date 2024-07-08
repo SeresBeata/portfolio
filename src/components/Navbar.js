@@ -26,7 +26,10 @@ const Navbar = ({ lang, setLang }) => {
     setAnchorEl(null);
   };
 
-  const [activeLang, setActiveLang] = useState('en');
+  const storedLanguage = localStorage.getItem('language');
+  const [activeLang, setActiveLang] = useState(
+    storedLanguage === 'de' ? 'de' : 'en'
+  );
 
   return (
     <AppBar position="sticky">
