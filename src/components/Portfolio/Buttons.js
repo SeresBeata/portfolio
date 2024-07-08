@@ -11,6 +11,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardHeader from '@mui/material/CardHeader';
+import './Portfolio.css';
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
@@ -96,8 +97,7 @@ export default function Buttons({ lang }) {
   const images = [
     {
       url: 'https://images.pexels.com/photos/7772559/pexels-photo-7772559.jpeg',
-      imgUrl:
-        'https://github.com/SeresBeata/achievement-2/blob/main/img/seresbeata.github.io_achievement-2_1200.png?raw=true',
+      imgUrl: 'card-img-pokedex',
       demoLink: 'https://seresbeata.github.io/achievement-2/',
       githubLink: 'https://github.com/SeresBeata/achievement-2',
       title: 'POKEDEX JS',
@@ -106,8 +106,7 @@ export default function Buttons({ lang }) {
     },
     {
       url: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      imgUrl:
-        'https://github.com/SeresBeata/achievement-3/blob/main/img/imgOfProject.png?raw=true',
+      imgUrl: 'card-img-api',
       demoLink: '',
       githubLink: 'https://github.com/SeresBeata/achievement-3',
       title: 'MYFLIX NODE.JS',
@@ -116,8 +115,7 @@ export default function Buttons({ lang }) {
     },
     {
       url: 'https://images.pexels.com/photos/5662857/pexels-photo-5662857.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      imgUrl:
-        'https://github.com/SeresBeata/achievement-4/blob/main/img/myFlixPresentation_2.png?raw=true',
+      imgUrl: 'card-img-react',
       demoLink: 'https://mymovie-myflix.netlify.app/',
       githubLink: 'https://github.com/SeresBeata/achievement-4',
       title: 'MYFLIX REACT',
@@ -126,8 +124,7 @@ export default function Buttons({ lang }) {
     },
     {
       url: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      imgUrl:
-        'https://github.com/SeresBeata/achievement-5/blob/main/img/meet-app-screeshot.png?raw=true',
+      imgUrl: 'card-img-meet-app',
       demoLink: ' https://seresbeata.github.io/achievement-5/',
       githubLink: 'https://github.com/SeresBeata/achievement-5',
       title: 'MEET EVENT APP REACT PWA',
@@ -136,8 +133,7 @@ export default function Buttons({ lang }) {
     },
     {
       url: 'https://images.pexels.com/photos/1970139/pexels-photo-1970139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      imgUrl:
-        'https://github.com/SeresBeata/portfolio/blob/master/public/img/chat-app.png?raw=true',
+      imgUrl: 'card-img-chat-app',
       demoLink: '',
       githubLink: 'https://github.com/SeresBeata/achievement-6',
       title: 'CHAT APP REACT NATIVE',
@@ -146,8 +142,7 @@ export default function Buttons({ lang }) {
     },
     {
       url: 'https://images.pexels.com/photos/57043/pexels-photo-57043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      imgUrl:
-        'https://github.com/SeresBeata/achievement-7/blob/master/img/img_2.png?raw=true',
+      imgUrl: 'card-img-angular',
       demoLink: 'https://seresbeata.github.io/achievement-7/welcome',
       githubLink: 'https://github.com/SeresBeata/achievement-7',
       title: 'MYFLIX ANGULAR',
@@ -230,10 +225,10 @@ export default function Buttons({ lang }) {
               subheader="Beáta Molnár"
             />
             <CardMedia
-              component="img"
+              component="div"
               alt={projectDetails.modalTitle}
               sx={{ height: { md: '350px', xs: '180px' } }}
-              image={projectDetails.modalImg}
+              className={projectDetails.modalImg}
             />
             <CardContent>
               <Typography variant="body2" color="text.secondary">
