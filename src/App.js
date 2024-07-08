@@ -22,7 +22,8 @@ const App = () => {
     },
   });
 
-  const [lang, setLang] = useState(en);
+  const storedLanguage = localStorage.getItem('language');
+  const [lang, setLang] = useState(storedLanguage === 'de' ? de : en);
 
   return (
     <ThemeProvider theme={darkTheme}>

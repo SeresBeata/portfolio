@@ -81,6 +81,7 @@ const Navbar = ({ lang, setLang }) => {
                     onClick={() => {
                       setLang(en);
                       setActiveLang('en');
+                      localStorage.setItem('language', 'en');
                     }}
                     variant={activeLang === 'en' ? 'contained' : 'outlined'}
                   >
@@ -90,6 +91,7 @@ const Navbar = ({ lang, setLang }) => {
                     onClick={() => {
                       setLang(de);
                       setActiveLang('de');
+                      localStorage.setItem('language', 'de');
                     }}
                     variant={activeLang === 'de' ? 'contained' : 'outlined'}
                   >
@@ -164,6 +166,7 @@ const Navbar = ({ lang, setLang }) => {
                       onClick={() => {
                         setLang(en);
                         setActiveLang('en');
+                        localStorage.setItem('language', 'en');
                       }}
                       variant={activeLang === 'en' ? 'contained' : 'outlined'}
                     >
@@ -173,6 +176,7 @@ const Navbar = ({ lang, setLang }) => {
                       onClick={() => {
                         setLang(de);
                         setActiveLang('de');
+                        localStorage.setItem('language', 'de');
                       }}
                       variant={activeLang === 'de' ? 'contained' : 'outlined'}
                     >
