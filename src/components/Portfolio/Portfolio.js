@@ -4,7 +4,7 @@ import './Portfolio.css';
 const Portfolio = ({ lang }) => {
   return (
     <div className="portfolio-container">
-      <Buttons />
+      <Buttons lang={lang} />
     </div>
   );
 };

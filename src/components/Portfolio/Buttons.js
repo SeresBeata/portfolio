@@ -12,75 +12,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardHeader from '@mui/material/CardHeader';
 
-const images = [
-  {
-    url: 'https://images.pexels.com/photos/7772559/pexels-photo-7772559.jpeg',
-    imgUrl:
-      'https://github.com/SeresBeata/achievement-2/blob/main/img/seresbeata.github.io_achievement-2_1200.png?raw=true',
-    demoLink: 'https://seresbeata.github.io/achievement-2/',
-    githubLink: 'https://github.com/SeresBeata/achievement-2',
-    title: 'POKEDEX JS',
-    width: '50%',
-    description:
-      'The aim of this project was to create a small, responsive Pokédex web application, that loads data from an external public Pokémon API and enables the viewing of data points of Pokémon in detail. The project itself was built with HTML, CSS and JavaScript.',
-  },
-  {
-    url: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    imgUrl:
-      'https://github.com/SeresBeata/achievement-3/blob/main/img/imgOfProject.png?raw=true',
-    demoLink: '',
-    githubLink: 'https://github.com/SeresBeata/achievement-3',
-    title: 'MYFLIX NODE.JS',
-    width: '50%',
-    description:
-      'The aim of this project was to build the server-side component of a “myFlix” web application. The web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.',
-  },
-  {
-    url: 'https://images.pexels.com/photos/5662857/pexels-photo-5662857.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    imgUrl:
-      'https://github.com/SeresBeata/achievement-4/blob/main/img/myFlixPresentation_2.png?raw=true',
-    demoLink: 'https://mymovie-myflix.netlify.app/',
-    githubLink: 'https://github.com/SeresBeata/achievement-4',
-    title: 'MYFLIX REACT',
-    width: '50%',
-    description:
-      'The aim of this project was to build the client-side component of a “myFlix” web application. The web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.',
-  },
-  {
-    url: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    imgUrl:
-      'https://github.com/SeresBeata/achievement-5/blob/main/img/meet-app-screeshot.png?raw=true',
-    demoLink: ' https://seresbeata.github.io/achievement-5/',
-    githubLink: 'https://github.com/SeresBeata/achievement-5',
-    title: 'MEET EVENT APP REACT PWA',
-    width: '50%',
-    description:
-      'The aim of this project was to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
-  },
-  {
-    url: 'https://images.pexels.com/photos/1970139/pexels-photo-1970139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    imgUrl:
-      'https://github.com/SeresBeata/portfolio/blob/master/public/img/chat-app.png?raw=true',
-    demoLink: '',
-    githubLink: 'https://github.com/SeresBeata/achievement-6',
-    title: 'CHAT APP REACT NATIVE',
-    width: '50%',
-    description:
-      'The aim of this project was to build a chat app for mobile devices using React Native (JavaScript framework used for mobile app development). The app provides users with a chat interface and options to share images and their location.',
-  },
-  {
-    url: 'https://images.pexels.com/photos/57043/pexels-photo-57043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    imgUrl:
-      'https://github.com/SeresBeata/achievement-7/blob/master/img/img_2.png?raw=true',
-    demoLink: 'https://seresbeata.github.io/achievement-7/welcome',
-    githubLink: 'https://github.com/SeresBeata/achievement-7',
-    title: 'MYFLIX ANGULAR',
-    width: '50%',
-    description:
-      'The aim of this project was to build the client-side component of a “myFlix” web application by using Angular. The web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.',
-  },
-];
-
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 150,
@@ -161,7 +92,70 @@ const modalStyle = {
   justifyContent: 'center',
 };
 
-export default function Buttons() {
+export default function Buttons({ lang }) {
+  const images = [
+    {
+      url: 'https://images.pexels.com/photos/7772559/pexels-photo-7772559.jpeg',
+      imgUrl:
+        'https://github.com/SeresBeata/achievement-2/blob/main/img/seresbeata.github.io_achievement-2_1200.png?raw=true',
+      demoLink: 'https://seresbeata.github.io/achievement-2/',
+      githubLink: 'https://github.com/SeresBeata/achievement-2',
+      title: 'POKEDEX JS',
+      width: '50%',
+      description: lang.portfolio_pokedex,
+    },
+    {
+      url: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      imgUrl:
+        'https://github.com/SeresBeata/achievement-3/blob/main/img/imgOfProject.png?raw=true',
+      demoLink: '',
+      githubLink: 'https://github.com/SeresBeata/achievement-3',
+      title: 'MYFLIX NODE.JS',
+      width: '50%',
+      description: lang.portfolio_myFlix_api,
+    },
+    {
+      url: 'https://images.pexels.com/photos/5662857/pexels-photo-5662857.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      imgUrl:
+        'https://github.com/SeresBeata/achievement-4/blob/main/img/myFlixPresentation_2.png?raw=true',
+      demoLink: 'https://mymovie-myflix.netlify.app/',
+      githubLink: 'https://github.com/SeresBeata/achievement-4',
+      title: 'MYFLIX REACT',
+      width: '50%',
+      description: lang.portfolio_myFlix_react,
+    },
+    {
+      url: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      imgUrl:
+        'https://github.com/SeresBeata/achievement-5/blob/main/img/meet-app-screeshot.png?raw=true',
+      demoLink: ' https://seresbeata.github.io/achievement-5/',
+      githubLink: 'https://github.com/SeresBeata/achievement-5',
+      title: 'MEET EVENT APP REACT PWA',
+      width: '50%',
+      description: lang.portfolio_meet_app,
+    },
+    {
+      url: 'https://images.pexels.com/photos/1970139/pexels-photo-1970139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      imgUrl:
+        'https://github.com/SeresBeata/portfolio/blob/master/public/img/chat-app.png?raw=true',
+      demoLink: '',
+      githubLink: 'https://github.com/SeresBeata/achievement-6',
+      title: 'CHAT APP REACT NATIVE',
+      width: '50%',
+      description: lang.portfolio_chat_app,
+    },
+    {
+      url: 'https://images.pexels.com/photos/57043/pexels-photo-57043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      imgUrl:
+        'https://github.com/SeresBeata/achievement-7/blob/master/img/img_2.png?raw=true',
+      demoLink: 'https://seresbeata.github.io/achievement-7/welcome',
+      githubLink: 'https://github.com/SeresBeata/achievement-7',
+      title: 'MYFLIX ANGULAR',
+      width: '50%',
+      description: lang.portfolio_myFlix_angular,
+    },
+  ];
+
   //handle modal open/close
   const [openModal, setOpenModal] = useState(false);
 
@@ -253,7 +247,7 @@ export default function Buttons() {
                 rel="noreferrer"
               >
                 <Button size="small" color="secondary">
-                  See project
+                  {lang.portfolio_section_button_first}
                 </Button>
               </a>
 
@@ -266,7 +260,7 @@ export default function Buttons() {
                   rel="noreferrer"
                 >
                   <Button size="small" color="secondary">
-                    Try it out
+                    {lang.portfolio_section_button_second}
                   </Button>
                 </a>
               )}
@@ -278,7 +272,7 @@ export default function Buttons() {
                   setOpenModal(false);
                 }}
               >
-                Close
+                {lang.portfolio_section_button_third}
               </Button>
             </CardActions>
           </Card>
