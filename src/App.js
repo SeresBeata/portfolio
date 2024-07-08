@@ -41,7 +41,7 @@ const App = () => {
           <Parallax type="simpleparallax" />
         </Box>
         <Box id="contact" className="main-sections">
-          <Contact />
+          <Contact lang={lang} />
         </Box>
       </Box>
     </ThemeProvider>

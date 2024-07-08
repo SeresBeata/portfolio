@@ -11,7 +11,7 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const Contact = () => {
+const Contact = ({ lang }) => {
   return (
     <Box
       sx={{
@@ -27,18 +27,17 @@ const Contact = () => {
         <Card sx={{ minWidth: '300px', maxWidth: '500px' }}>
           <CardContent>
             <h2 className="contact-title" style={{ textAlign: 'center' }}>
-              Contact
+              {lang.contact_title}
             </h2>
             <Divider />
             <Typography
               sx={{ mb: 1.5, paddingTop: '25px' }}
               color="text.secondary"
             >
-              Got your attention? Have any questions?
+              {lang.contact_section_first}
             </Typography>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              Let's get this conversation started! Contact me and I'll get in
-              touch as soon as I can:
+              {lang.contact_section_second}
             </Typography>
           </CardContent>
           <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -52,7 +51,7 @@ const Contact = () => {
                 color="secondary"
                 endIcon={<GitHubIcon />}
               >
-                Find me on
+                GitHub
               </Button>
             </a>
             <a
@@ -65,7 +64,7 @@ const Contact = () => {
                 color="secondary"
                 endIcon={<LinkedInIcon />}
               >
-                Find me on
+                LinkedIn
               </Button>
             </a>
           </CardActions>
